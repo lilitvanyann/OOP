@@ -1,8 +1,8 @@
 int main() 
 {
-    print(42);
-    int value = 25;
-    if (value > 20) {
-        print(value);
-    }
+int var=5;
+
+print(var);
+return 0;
+
 }
