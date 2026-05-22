@@ -31,11 +31,11 @@ int main()
         auto ast = parser.parse(tokens);
 
         // 4. IR GENERATION
-        IR irGen(&parser.getSymbolTable());  
+        IR irGen(&parser.getSymbolTable());
         auto ir = irGen.generate(ast.get());
         printIR(ir);
 
-        
+
         // 5. ASSEMBLER
         Assembler asmGen;
         auto asmCode = asmGen.generate(ir);
@@ -47,7 +47,7 @@ int main()
         printMC(machineCode);
 
         // 7. SAVE TO BINARY FILE
-        saveMachineCode(machineCode, "binaryfile.bin");
+        saveMachineCode(machineCode, "program.bin");
 
         // 8. RUN CPU SIMULATOR
         CPUSimulator cpu;
