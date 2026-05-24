@@ -154,17 +154,17 @@ Fetch-decode-execute cycle simulation
 
 End-to-end system integration
 
-### 🎯 Why This Project Matters
+## 🎯 Why This Project Matters
 Building a compiler from scratch demonstrates:
 
-### Skill	Evidence
+## Skill	Evidence
 Algorithms & Data Structures	Trees (AST), graphs (control flow), symbol tables
 Low-level understanding	Assembly, machine code, CPU internals
 System design	Pipeline architecture, modular design
 Problem solving	Debugging complex interactions across stages
 C++ proficiency	Pointers, memory management, OOP
 
-### ⭐ Future Improvements
+## ⭐ Future Improvements
 Add more data types (float, arrays)
 
 Implement optimization passes (constant folding, dead code elimination)
