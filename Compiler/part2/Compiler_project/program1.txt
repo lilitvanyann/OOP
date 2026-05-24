@@ -1,8 +1,0 @@
-int main() 
-{
-int var=5;
-
-print(var);
-return 0;
-
-}
