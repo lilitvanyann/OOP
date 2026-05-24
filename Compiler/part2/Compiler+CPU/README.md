@@ -163,3 +163,14 @@ Low-level understanding	Assembly, machine code, CPU internals
 System design	Pipeline architecture, modular design
 Problem solving	Debugging complex interactions across stages
 C++ proficiency	Pointers, memory management, OOP
+
+⭐ Future Improvements
+Add more data types (float, arrays)
+
+Implement optimization passes (constant folding, dead code elimination)
+
+Add a linker for multiple files
+
+Create a web-based visualizer for AST and CPU state
+
+Extend CPU to support interrupts and I/O
