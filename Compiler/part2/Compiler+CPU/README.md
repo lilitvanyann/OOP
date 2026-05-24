@@ -87,62 +87,46 @@ text
 | **Machine Code** | Binary encoding, instruction packing |
 | **CPU** | Fetch-decode-execute cycle, register file, ALU, memory, branching |
 
----
-
-## 🖥️ Supported Instructions (Example)
-MOV R1, 5 ; R1 = 5
-MOV R2, 3 ; R2 = 3
-ADD R3, R1, R2; R3 = R1 + R2
-SUB R4, R1, R2; R4 = R1 - R2
-MUL R5, R1, R2; R5 = R1 * R2
-DIV R6, R1, R2; R6 = R1 / R2
-CMP R1, R2 ; compare R1 and R2
-JMP label ; unconditional jump
-JE label ; jump if equal
-JNE label ; jump if not equal
-HLT ; halt execution
+MOV  R1, 5      ; R1 = 5
+MOV  R2, 3      ; R2 = 3
+ADD  R3, R1, R2 ; R3 = R1 + R2
+SUB  R4, R1, R2 ; R4 = R1 - R2
+MUL  R5, R1, R2 ; R5 = R1 * R2
+DIV  R6, R1, R2 ; R6 = R1 / R2
+CMP  R1, R2     ; compare R1 and R2
+JMP  label      ; unconditional jump
+JE   label      ; jump if equal
+JNE  label      ; jump if not equal
+HLT             ; halt execution
+📝 Example Program
+Source code (custom language):
 
 text
-
----
-
-## 📝 Example Program
-
-**Source code (custom language):**
 a = 5 + 3;
 b = a * 2;
 print(b);
+Compilation & execution:
 
 text
-
-**Compilation & execution:**
-[Lexer] Tokens: ID(a) ASSIGN NUM(5) PLUS NUM(3) SEMICOLON ...
-[Parser] AST built successfully
-[IR] t1 = 5 + 3
-a = t1
-t2 = a * 2
-b = t2
+[Lexer]     Tokens: ID(a) ASSIGN NUM(5) PLUS NUM(3) SEMICOLON ...
+[Parser]    AST built successfully
+[IR]        t1 = 5 + 3
+            a = t1
+            t2 = a * 2
+            b = t2
 [Assembler] MOV R1, 5
-MOV R2, 3
-ADD R3, R1, R2
-...
-[CPU] Output: 16
-[CPU] Halted
+            MOV R2, 3
+            ADD R3, R1, R2
+            ...
+[CPU]       Output: 16
+[CPU]       Halted
+🛠️ Requirements
+C++11 or higher
 
-text
+No external dependencies (pure C++ standard library)
 
----
-
-## 🛠️ Requirements
-
-- C++11 or higher
-- No external dependencies (pure C++ standard library)
-
----
-
-## 🔨 Build & Run
-
-```bash
+🔨 Build & Run
+bash
 # Clone the repository
 git clone https://github.com/yourusername/custom-compiler.git
 cd custom-compiler
