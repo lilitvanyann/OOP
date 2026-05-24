@@ -18,7 +18,7 @@ void SymbolTable::exitScope() {
 bool SymbolTable::existsInCurrentScope(const std::string& name) {
     if (scopes.empty())
         return false;
-    return scopes.back().count(name) > 0;  // or find() != end()
+    return scopes.back().count(name) > 0;  
 }
 // ======================================
 
