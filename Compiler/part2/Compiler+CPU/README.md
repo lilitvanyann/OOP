@@ -7,7 +7,6 @@ A complete end-to-end compiler and CPU simulator written in C++. This project im
 This project demonstrates a deep understanding of how programming languages and computers work internally. It takes source code written in a custom programming language, compiles it through multiple stages, and finally executes the generated machine code on a simulated CPU.
 SOURCE CODE → Lexer → Parser → AST → IR → Assembler → Machine Code → CPU
 
-text
 
 ---
 
