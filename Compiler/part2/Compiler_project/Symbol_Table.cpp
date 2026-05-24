@@ -15,7 +15,6 @@ void SymbolTable::exitScope() {
     scopes.pop_back();
 }
 
-// ========== THIS WAS MISSING ==========
 bool SymbolTable::existsInCurrentScope(const std::string& name) {
     if (scopes.empty())
         return false;
