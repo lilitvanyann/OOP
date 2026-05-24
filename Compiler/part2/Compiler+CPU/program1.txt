@@ -1,0 +1,55 @@
+int multiply(int a, int b)
+{
+    int result ;
+    result = a * b;
+    print(result);
+    return result;
+}
+
+int countdown(int start)
+{
+    while (start > 0)
+    {
+        print(start);
+        start--;
+    }
+
+    return 0;
+}
+
+int main()
+{
+    int x = 5;
+    int y = 8;
+    int z = 2;
+
+    print(x);
+    print(y);
+
+    int sum = x + y;
+    int diff = y - z;
+    int product = x * z;
+
+    print(sum);
+    print(diff);
+    print(product);
+
+    x += 3;
+    y -= 2;
+
+    print(x);
+    print(y);
+
+
+    x++;
+    y--;
+
+    print(x);
+    print(y);
+
+    countdown(4);
+
+    multiply(x, y);
+
+    return 0;
+}
